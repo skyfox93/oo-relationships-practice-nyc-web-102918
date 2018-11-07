@@ -17,7 +17,7 @@ end
 end
 
 def pledges
-  Pledge.all.select{pledge.project==self}
+  Pledge.all.select{|pledge|pledge.project==self}
 end
 
 
